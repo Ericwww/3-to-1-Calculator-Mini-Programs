@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+var util = require('../../utils/util.js'); 
 Page({
   data: {
     motto: 'Hello World',
@@ -49,6 +49,16 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  gkcj: function () {
+    wx.navigateTo({
+      url: '../gkcj/gkcj'
+    })
+  },
+  zhcj: function () {
+    wx.navigateTo({
+      url: '../zhcj/zhcj'
     })
   }
 })
