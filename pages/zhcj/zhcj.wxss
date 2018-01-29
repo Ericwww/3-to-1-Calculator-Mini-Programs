@@ -1,0 +1,38 @@
+.label {
+  color: #545454;
+  display: inline-block;
+  min-width: 6em;
+}
+
+.form-control {
+  flex: 1;
+  height: 100rpx;
+  width: 700rpx;
+  display: flex;
+  margin: 20rpx 0;
+  background-color: #FFFFFF;
+  border-radius: 5rpx;
+  overflow: hidden;
+  
+}
+
+.bkxx{
+  margin: 10px;
+  
+}
+
+.label_1{
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 70px;
+}
+
+.xkcj{
+  margin: 10px;
+}
+
+.label_2{
+  margin: 10px;
+  margin-right: 90px;
+  margin-left: 20px;
+}

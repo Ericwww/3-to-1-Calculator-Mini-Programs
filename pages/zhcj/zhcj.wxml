@@ -1,2 +1,24 @@
 <view class='bk'>
+    <view>
+        <view class="form-control">
+        <label class='label_1'>报考学校</label>
+            <picker class='bkxx' bindchange="bindPickerChange_1" value="{{index_1}}" range="{{array_1}}">
+                {{array_1[index_1]}}
+            </picker>
+        </view>
+        <view class="form-control">
+        <label class='label_2'>学考成绩</label>
+
+              <picker class='xkcj' bindchange="bindPickerChange_2" value="{{index_2}}" range="{{array_2}}">
+                  {{array_2[index_2]}} A
+              </picker>
+              <picker class='xkcj' bindchange="bindPickerChange_3" value="{{index_3}}" range="{{array_3}}">
+                  {{array_3[index_3]}} B
+              </picker>
+              <picker class='xkcj' bindchange="bindPickerChange_4" value="{{index_4}}" range="{{array_4}}">
+                  {{array_4[index_4]}} C
+              </picker>
+
+        </view>
+    </view>
 </view>

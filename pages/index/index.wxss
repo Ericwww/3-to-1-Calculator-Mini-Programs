@@ -43,3 +43,6 @@
   font-size: 20px;
 }
 
+text{
+  margin: 8px;
+}

@@ -10,7 +10,7 @@
 } 
 
 .bk{
-  background: #d2d2d2;
+  background: #efeff4;
   position: fixed;
   height: 100%;
   width: 100%;
