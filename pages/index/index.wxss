@@ -24,7 +24,6 @@
   margin-right: 20rpx;
 }
 
-
 .timer {
   color: red;
   font-size: 40px;

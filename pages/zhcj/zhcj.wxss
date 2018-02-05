@@ -22,9 +22,10 @@
 }
 
 .label_1{
-  margin: 10px;
+  margin: 25rpx;
   margin-left: 20px;
   margin-right: 70px;
+  font-size: 35rpx
 }
 
 .xkcj{
@@ -32,7 +33,22 @@
 }
 
 .label_2{
-  margin: 10px;
+  margin: 25rpx;
   margin-right: 90px;
   margin-left: 20px;
+  font-size: 35rpx;
 }
+
+.label_3{
+  margin: 25rpx;
+  font-size: 35rpx;
+}
+
+.mscj{
+  margin: 10px;
+}
+
+.gkcj{
+  margin: 10px;
+}
+
