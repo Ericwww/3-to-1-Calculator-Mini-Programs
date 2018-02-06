@@ -4,10 +4,11 @@ const app = getApp()
 var util = require('../../utils/util.js'); 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    day:'',
+    hour:'',
+    minute:'',
+    second:'',
+    
   },
   //事件处理函数
   bindViewTap: function() {
@@ -15,33 +16,28 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+  Timer: function () {
+    let days = 0;
+    let hours = 0;
+    let minutes = 0;
+    let seconds = 0;
+    let diff = Math.floor((new Date(1528333200000) - new Date()) / 1000);
+    days = Math.floor(diff / 86400);
+    diff = diff - days * 86400;
+    hours = Math.floor(diff / 3600);
+    diff = diff - hours * 3600;
+    minutes = Math.floor(diff / 60);
+    seconds = diff - minutes * 60;
+    this.setData({
+      day:days,
+      hour:hours,
+      minute:minutes,
+      second:seconds,
+    })
+  },
+  onReady:function(){
+    this.Timer()
+    this.interval = setInterval(this.Timer, 1000)
   },
   gkcj: function () {
     wx.navigateTo({

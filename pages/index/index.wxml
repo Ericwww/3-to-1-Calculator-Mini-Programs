@@ -6,9 +6,7 @@
     <view id='title' class='tit3'>
         <text>距离2018年高考还有</text>
     </view>
-	  <view class="timer">{{time}}</view>
-	      
-    
+	  <view class="timer">{{day}}天{{hour}}时{{minute}}分{{second}}秒</view>
     <view class="container">
         <view class="Welcome">
             <button class='mini-btn' size='mini' plain='true' bindtap='zhcj'>计算综合成绩</button>
