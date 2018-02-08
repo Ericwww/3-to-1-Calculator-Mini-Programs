@@ -18,6 +18,9 @@
       <picker class='xkcj' bindchange="bindPickerChange4" value="{{index_4}}" range="{{array_4}}">
         {{array_4[index_4]}} C
       </picker>
+      <picker class='xkcj' bindchange="bindPickerChange5" value="{{index_5}}" range="{{array_5}}">
+        {{array_5[index_5]}} D
+      </picker>
     </view>
     <view class="form-control">
       <label class='label_3'>面试成绩</label>
@@ -28,10 +31,10 @@
       <input type="digit" placeholder="请输入高考成绩" maxlength="5" class='gkcj' value="{{gkcj}}" bindinput='bindInputText2' />
     </view>
     <view>
-      <button plain='true' bindtap='cal_zhcj'>计算</button>
+      <button plain='true' bindtap='cal_zhcj' disabled='{{bool_bkxx || bool_mscj || bool_gkcj}}'>计算</button>
     </view>
-    <view>
-      <text>{{score}}</text>
+    <view class='score' wx:if="{{bool_score}}">
+      <text>您的综合成绩为{{score}}分</text>
     </view>
   </view>
 </view>

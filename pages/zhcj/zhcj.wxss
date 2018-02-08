@@ -17,38 +17,49 @@
 }
 
 .bkxx{
-  margin: 10px;
+  margin: 25rpx;
   
 }
 
 .label_1{
   margin: 25rpx;
-  margin-left: 20px;
-  margin-right: 70px;
+  margin-left: 45rpx;
+  margin-right: 30rpx;
   font-size: 35rpx
 }
 
 .xkcj{
-  margin: 10px;
+  margin: 25rpx;
+  justify-content: center;
 }
 
 .label_2{
   margin: 25rpx;
-  margin-right: 90px;
-  margin-left: 20px;
+  margin-right: 35rpx;
+  margin-left: 45rpx;
   font-size: 35rpx;
 }
 
 .label_3{
   margin: 25rpx;
+  margin-right: 35rpx;
+  margin-left: 40rpx;
   font-size: 35rpx;
 }
 
 .mscj{
-  margin: 10px;
+  margin: 25rpx;
+  font-size: 35rpx;
 }
 
 .gkcj{
-  margin: 10px;
+  margin: 25rpx;
+  font-size: 35rpx;
+}
+
+.score{
+  text-align: center;
+  margin: 25rpx;
+  font-size: 35rpx;
 }
 
