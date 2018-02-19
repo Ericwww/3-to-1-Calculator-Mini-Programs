@@ -4,7 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    array_1: [
+    school: [
       '------',
       '浙江工业大学',
       '杭州电子科技大学',
@@ -53,7 +53,7 @@ Page({
       '温州医科大学仁济学院'
 
     ],
-    objectArray_1: [
+    schoolArray: [
       {
         id: 0,
         name: '------'
@@ -240,10 +240,10 @@ Page({
       }
 
     ],
-    index_1: 0,
+    schoolIndex: 0,
 
-    array_2: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
-    objectArray_2: [
+    xkcjIsA: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+    xkcjIsAArray: [
       {
         id: 0,
         name: '0'
@@ -289,60 +289,10 @@ Page({
         name: '10'
       }
     ],
-    index_2: 0,
+    xkcjIsAIndex: 0,
 
-    array_3: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
-    objectArray_3: [
-      {
-        id: 0,
-        name: '0'
-      },
-      {
-        id: 1,
-        name: '1'
-      },
-      {
-        id: 2,
-        name: '2'
-      },
-      {
-        id: 3,
-        name: '3'
-      },
-      {
-        id: 4,
-        name: '4'
-      },
-      {
-        id: 5,
-        name: '5'
-      },
-      {
-        id: 6,
-        name: '6'
-      },
-      {
-        id: 7,
-        name: '7'
-      },
-      {
-        id: 8,
-        name: '8'
-      },
-      {
-        id: 9,
-        name: '9'
-      },
-      {
-        id: 10,
-        name: '10'
-      }
-
-    ],
-    index_3: 0,
-
-    array_4: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
-    objectArray_4: [
+    xkcjIsB: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+    xkcjIsBArray: [
       {
         id: 0,
         name: '0'
@@ -389,10 +339,10 @@ Page({
       }
 
     ],
-    index_4: 0,
+    xkcjIsBIndex: 0,
 
-    array_5: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
-    objectArray_5: [
+    xkcjIsC: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+    xkcjIsCArray: [
       {
         id: 0,
         name: '0'
@@ -439,7 +389,57 @@ Page({
       }
 
     ],
-    index_5: 0,
+    xkcjIsCIndex: 0,
+
+    xkcjIsD: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+    xkcjIsDArray: [
+      {
+        id: 0,
+        name: '0'
+      },
+      {
+        id: 1,
+        name: '1'
+      },
+      {
+        id: 2,
+        name: '2'
+      },
+      {
+        id: 3,
+        name: '3'
+      },
+      {
+        id: 4,
+        name: '4'
+      },
+      {
+        id: 5,
+        name: '5'
+      },
+      {
+        id: 6,
+        name: '6'
+      },
+      {
+        id: 7,
+        name: '7'
+      },
+      {
+        id: 8,
+        name: '8'
+      },
+      {
+        id: 9,
+        name: '9'
+      },
+      {
+        id: 10,
+        name: '10'
+      }
+
+    ],
+    xkcjIsDIndex: 0,
 
     mscj: '',
 
@@ -447,11 +447,11 @@ Page({
 
     score: '',
 
-    bool_bkxx: true,
+    bkxxBool: true,
 
-    bool_mscj: true,
+    mscjBool: true,
 
-    bool_gkcj: true,
+    gkcjBool: true,
 
     bool_score: false,
 
@@ -511,57 +511,57 @@ Page({
   bindPickerChange1: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      index_1: e.detail.value,
-      bool_bkxx: false
+      schoolIndex: e.detail.value,
+      bkxxBool: false
     })
   },
   bindPickerChange2: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      index_2: e.detail.value
+      xkcjIsAIndex: e.detail.value
     })
   },
   bindPickerChange3: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      index_3: e.detail.value
+      xkcjIsBIndex: e.detail.value
     })
   },
   bindPickerChange4: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      index_4: e.detail.value
+      xkcjIsCIndex: e.detail.value
     })
   },
   bindPickerChange5: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      index_5: e.detail.value
+      xkcjIsDIndex: e.detail.value
     })
   },
   bindInputText1: function (e) {
     console.log('input发送选择改变，携带值为', e.detail.value)
     this.setData({
       mscj: e.detail.value,
-      bool_mscj: false
+      mscjBool: false
     })
   },
   bindInputText2: function (e) {
     console.log('input发送选择改变，携带值为', e.detail.value)
     this.setData({
       gkcj: e.detail.value,
-      bool_gkcj: false
+      gkcjBool: false
     })
   },
 
-  cal_zhcj: function (e) {
+  calZhScore: function (e) {
     var i = 0
     var zf = 7.5
-    var college = this.data.index_1
-    var a = this.data.index_2
-    var b = this.data.index_3
-    var c = this.data.index_4
-    var d = this.data.index_5
+    var college = this.data.schoolIndex
+    var a = this.data.xkcjIsAIndex
+    var b = this.data.xkcjIsBIndex
+    var c = this.data.xkcjIsCIndex
+    var d = this.data.xkcjIsDIndex
     var ms = this.data.mscj
     var gk = this.data.gkcj
     var xk
@@ -718,7 +718,7 @@ Page({
 
     this.setData({
       score: score.toFixed(3),
-      bool_score: true
+      scoreBool: true
     })
 
 

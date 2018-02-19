@@ -2,24 +2,24 @@
   <view>
     <view class="form-control">
       <label class='label_1'>报考学校</label>
-      <picker class='bkxx' bindchange="bindPickerChange1" value="{{index_1}}" range="{{array_1}}">
-        {{array_1[index_1]}}
+      <picker class='bkxx' bindchange="bindPickerChange1" value="{{schoolIndex}}" range="{{school}}">
+        {{school[schoolIndex]}}
       </picker>
     </view>
     <view class="form-control">
       <label class='label_2'>学考成绩</label>
 
-      <picker class='xkcj' bindchange="bindPickerChange2" value="{{index_2}}" range="{{array_2}}">
-        {{array_2[index_2]}} A
+      <picker class='xkcj' bindchange="bindPickerChange2" value="{{xkcjIsAIndex}}" range="{{xkcjIsA}}">
+        {{xkcjIsA[xkcjIsAIndex]}} A
       </picker>
-      <picker class='xkcj' bindchange="bindPickerChange3" value="{{index_3}}" range="{{array_3}}">
-        {{array_3[index_3]}} B
+      <picker class='xkcj' bindchange="bindPickerChange3" value="{{xkcjIsBIndex}}" range="{{xkcjIsB}}">
+        {{xkcjIsB[xkcjIsBIndex]}} B
       </picker>
-      <picker class='xkcj' bindchange="bindPickerChange4" value="{{index_4}}" range="{{array_4}}">
-        {{array_4[index_4]}} C
+      <picker class='xkcj' bindchange="bindPickerChange4" value="{{xkcjIsCIndex}}" range="{{xkcjIsC}}">
+        {{xkcjIsC[xkcjIsCIndex]}} C
       </picker>
-      <picker class='xkcj' bindchange="bindPickerChange5" value="{{index_5}}" range="{{array_5}}">
-        {{array_5[index_5]}} D
+      <picker class='xkcj' bindchange="bindPickerChange5" value="{{xkcjIsDIndex}}" range="{{xkcjIsD}}">
+        {{xkcjIsD[xkcjIsDIndex]}} D
       </picker>
     </view>
     <view class="form-control">
@@ -31,9 +31,9 @@
       <input type="digit" placeholder="请输入高考成绩" maxlength="5" class='gkcj' value="{{gkcj}}" bindinput='bindInputText2' />
     </view>
     <view>
-      <button plain='true' bindtap='cal_zhcj' disabled='{{bool_bkxx || bool_mscj || bool_gkcj}}'>计算</button>
+      <button plain='true' bindtap='calZhScore' disabled='{{bkxxBool || mscjBool || gkcjBool}}'>计算</button>
     </view>
-    <view class='score' wx:if="{{bool_score}}">
+    <view class='score' wx:if="{{scoreBool}}">
       <text>您的综合成绩为{{score}}分</text>
     </view>
   </view>

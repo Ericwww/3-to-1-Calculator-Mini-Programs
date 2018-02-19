@@ -1,1 +1,65 @@
-/* pages/gkcj/gkcj.wxss */
+.label {
+  color: #545454;
+  display: inline-block;
+  min-width: 6em;
+}
+
+.form-control {
+  flex: 1;
+  height: 100rpx;
+  width: 700rpx;
+  display: flex;
+  margin: 20rpx 0;
+  background-color: #FFFFFF;
+  border-radius: 5rpx;
+  overflow: hidden;
+  
+}
+
+.bkxx{
+  margin: 25rpx;
+  
+}
+
+.label_1{
+  margin: 25rpx;
+  margin-left: 45rpx;
+  margin-right: 30rpx;
+  font-size: 35rpx
+}
+
+.xkcj{
+  margin: 25rpx;
+  justify-content: center;
+}
+
+.label_2{
+  margin: 25rpx;
+  margin-right: 35rpx;
+  margin-left: 45rpx;
+  font-size: 35rpx;
+}
+
+.label_3{
+  margin: 25rpx;
+  margin-right: 35rpx;
+  margin-left: 40rpx;
+  font-size: 35rpx;
+}
+
+.mscj{
+  margin: 25rpx;
+  font-size: 35rpx;
+}
+
+.zhcj{
+  margin: 25rpx;
+  font-size: 35rpx;
+}
+
+.score{
+  text-align: center;
+  margin: 25rpx;
+  font-size: 35rpx;
+}
+

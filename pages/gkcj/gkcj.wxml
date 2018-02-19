@@ -1,2 +1,40 @@
 <view class='bk'>
+  <view>
+    <view class="form-control">
+      <label class='label_1'>报考学校</label>
+      <picker class='bkxx' bindchange="bindPickerChange1" value="{{schoolIndex}}" range="{{school}}">
+        {{school[schoolIndex]}}
+      </picker>
+    </view>
+    <view class="form-control">
+      <label class='label_2'>学考成绩</label>
+
+      <picker class='xkcj' bindchange="bindPickerChange2" value="{{xkcjIsAIndex}}" range="{{xkcjIsA}}">
+        {{xkcjIsA[xkcjIsAIndex]}} A
+      </picker>
+      <picker class='xkcj' bindchange="bindPickerChange3" value="{{xkcjIsBIndex}}" range="{{xkcjIsB}}">
+        {{xkcjIsB[xkcjIsBIndex]}} B
+      </picker>
+      <picker class='xkcj' bindchange="bindPickerChange4" value="{{xkcjIsCIndex}}" range="{{xkcjIsC}}">
+        {{xkcjIsC[xkcjIsCIndex]}} C
+      </picker>
+      <picker class='xkcj' bindchange="bindPickerChange5" value="{{xkcjIsDIndex}}" range="{{xkcjIsD}}">
+        {{xkcjIsD[xkcjIsDIndex]}} D
+      </picker>
+    </view>
+    <view class="form-control">
+      <label class='label_3'>面试成绩</label>
+      <input type="digit" placeholder="请输入面试成绩" maxlength="6" class='mscj' value="{{mscj}}" bindinput='bindInputText1' />
+    </view>
+    <view class="form-control">
+      <label class='label_3'>综合成绩</label>
+      <input type="digit" placeholder="请输入目标综合成绩" maxlength="5" class='zhcj' value="{{zhcj}}" bindinput='bindInputText2' />
+    </view>
+    <view>
+      <button plain='true' bindtap='calGkScore' disabled='{{bkxxBool || mscjBool || zhcjBool}}'>计算</button>
+    </view>
+    <view class='score' wx:if="{{scoreBool}}">
+      <text>为达到目标综合成绩\n您的高考成绩应为{{score}}分</text>
+    </view>
+  </view>
 </view>
